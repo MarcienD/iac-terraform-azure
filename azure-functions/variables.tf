@@ -8,6 +8,11 @@ variable "resource_group_location" {
   default = "westeurope"
 }
 
+variable "storage_account_name" {
+  type = string
+  default = "example-storage"
+  
+
 variable "storage_account_tier" {
   description = "Account-Tier"
   type        = string
