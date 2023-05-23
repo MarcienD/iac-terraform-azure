@@ -49,8 +49,9 @@ variable "function_name" {
 }
 
  variable "config_json" {
-  type = map(any)
-  default = {
+  type = string
+  default = <<JSON
+	{
       "bindings": [
         {
           "authLevel": "anonymous",
@@ -67,4 +68,5 @@ variable "function_name" {
         }
       ]
     }
+ JSON
  } 
