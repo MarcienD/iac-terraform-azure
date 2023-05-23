@@ -48,7 +48,7 @@ variable "function_name" {
   default = "example-function"
 }
 
- variable "config_json"
+ variable "config_json" {
   type = map(any)
   default = {
       "bindings": [
@@ -67,4 +67,4 @@ variable "function_name" {
         }
       ]
     }
-   
+ } 
