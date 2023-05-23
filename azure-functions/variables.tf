@@ -47,3 +47,24 @@ variable "function_name" {
   type = string
   default = "example-function"
 }
+
+ variable "config_json"
+  type = map(any)
+  default = {
+      "bindings": [
+        {
+          "authLevel": "anonymous",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": ["get", 
+          ]
+        },
+        {
+          "type": "http",
+          "direction": "out",
+          "name": "$return"
+        }
+      ]
+    }
+   
