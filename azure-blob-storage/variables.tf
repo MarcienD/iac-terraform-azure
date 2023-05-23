@@ -45,7 +45,7 @@ variable "blob_type" {
 
  variable "blob_path"{
    type = string
-   default = "Terraform\example-blob-file.txt"
+   default = "Terraform/example-blob-file.txt"
  }
   
 
