@@ -34,27 +34,6 @@ resource "azurerm_linux_function_app" "example" {
 resource "azurerm_function_app_function" "example" {
   name                      = var.function_name
   function_app_id           = azurerm_linux_function_app.example.id
-    config_json = <<JSON
-    {
-      "bindings": [
-        {
-          "authLevel": "anonymous",
-          "type": "httpTrigger",
-          "direction": "in",
-          "name": "req",
-          "methods": [
-            "get",
-            "post"
-          ]
-        },
-        {
-          "type": "http",
-          "direction": "out",
-          "name": "$return"
-        }
-      ]
-    }
-  JSON
-  
+  config_json               = var.config_json
 }
 
