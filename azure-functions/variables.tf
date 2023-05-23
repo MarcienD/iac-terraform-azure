@@ -21,6 +21,8 @@ variable "storage_account_tier" {
 variable "storage_account_replication_type" {
   type        = string
   default     = "LRS"
+}
+  
 variable "app_service_plan_name" {
   type = string
   default = "example-app-service-plan"
