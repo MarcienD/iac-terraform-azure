@@ -18,15 +18,25 @@ variable "storage_account_tier" {
   default "Standard"
 }
 
-variable "container_acces_type" {
+variable "storage_account_replication" {
   type = string
-  default = "public"
+  default = "LRS"
 }
 
 variable "storage_container_name" {
   type    = string
   default = "example-container"
 }
+
+variable "container_acces_type" {
+  type = string
+  default = "public"
+}
+
+ variable "blob_name" {
+   type = string
+   default = "example-blob"
+ }
 
 variable "blob_type" {
   type = string
@@ -38,12 +48,4 @@ variable "blob_type" {
    default = "C:\Users\dutko\termofor\Terraform\example-blob-file.txt"
  }
   
- variable "blob_name" {
-   type = string
-   default = "example-blob"
- }
 
-variable "storage_blob_name" {
-  type    = string
-  default = "example-blob-name"
-}
