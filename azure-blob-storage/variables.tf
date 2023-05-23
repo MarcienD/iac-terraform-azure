@@ -15,7 +15,7 @@ variable "storage_account_name" {
 
 variable "storage_account_tier" {
   type = string
-  default "Standard"
+  default = "Standard"
 }
 
 variable "storage_account_replication" {
@@ -45,7 +45,7 @@ variable "blob_type" {
 
  variable "blob_path"{
    type = string
-   default = "C:\Users\dutko\termofor\Terraform\example-blob-file.txt"
+   default = "Terraform\example-blob-file.txt"
  }
   
 
