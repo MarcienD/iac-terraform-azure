@@ -12,4 +12,14 @@ resource "azurerm_storage_account" "example" {
 }
 
 resource "azurem_storage_container" "example" {
-  
+  name                     = var.container_name
+  storage_account_name     = azurem_storage_account.example.name
+  container_acces_type     = var.container_acces_type
+}
+
+resource "azurem_storage_blob" "example" {
+   name                    = var.blob_name
+   storage_account_name    = azurem_storage_account.example.name
+   type                    = var.blob_type
+   source_content           = var.blob_path
+}
