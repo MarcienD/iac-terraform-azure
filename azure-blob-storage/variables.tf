@@ -13,6 +13,12 @@ variable "storage_account_name" {
   default = "example-storage-account"
 }
 
+variable "storage_account_tier" {
+  type = string
+  default "Standard"
+}
+
+
 variable "storage_container_name" {
   type    = string
   default = "example-container"
