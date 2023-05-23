@@ -3,7 +3,7 @@ variable "resource_group_name" {
   default = "example-resource-group"
 }
 
-variable "location" {
+variable "resource_group_location" {
   type = string
   default = "westeurope"
 }
