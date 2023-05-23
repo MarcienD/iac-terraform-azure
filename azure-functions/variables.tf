@@ -14,13 +14,11 @@ variable "storage_account_name" {
   
 
 variable "storage_account_tier" {
-  description = "Account-Tier"
   type        = string
   default     = "Standard"
 }
 
-variable "storage_account_replication" {
-  description = "Replication-Account"
+variable "storage_account_replication_type" {
   type        = string
   default     = "LRS"
 variable "app_service_plan_name" {
