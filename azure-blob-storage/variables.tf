@@ -23,11 +23,25 @@ variable "container_acces_type" {
   default = "public"
 }
 
-
 variable "storage_container_name" {
   type    = string
   default = "example-container"
 }
+
+variable "blob_type" {
+  type = string
+  default "example-blob-file.txt"
+}
+
+ variable "blob_path"{
+   type = string
+   default = "C:\Users\dutko\termofor\Terraform\example-blob-file.txt"
+ }
+  
+ variable "blob_name" {
+   type = string
+   default = "example-blob"
+ }
 
 variable "storage_blob_name" {
   type    = string
