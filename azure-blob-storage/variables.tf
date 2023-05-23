@@ -18,6 +18,11 @@ variable "storage_account_tier" {
   default "Standard"
 }
 
+variable "container_acces_type" {
+  type = string
+  default = "public"
+}
+
 
 variable "storage_container_name" {
   type    = string
@@ -26,5 +31,5 @@ variable "storage_container_name" {
 
 variable "storage_blob_name" {
   type    = string
-  default = "example-blob"
+  default = "example-blob-name"
 }
