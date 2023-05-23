@@ -24,9 +24,19 @@ variable "storage_account_replication_type" {
 }
   
 variable "app_service_plan_name" {
-  type = string
-  default = "example-app-service-plan"
+  type        = string
+  default     = "example-app-service-plan"
 }
+  
+  variable "app_service_plan_sku_tier" {
+    type        = string
+    default     = "Standard"
+  }
+  
+  variable "app_service_plan_sku_size" {
+    type      = string
+    default   = "S1"
+  }
 
 variable "function_app_name" {
   type = string
